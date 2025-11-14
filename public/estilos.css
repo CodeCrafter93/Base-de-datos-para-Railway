@@ -1,0 +1,28 @@
+body {
+  font-family: Segoe UI, sans-serif;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+a.boton {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a.eliminar {
+  background: red;
+}

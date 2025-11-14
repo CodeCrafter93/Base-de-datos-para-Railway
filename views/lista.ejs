@@ -1,0 +1,27 @@
+<%- include("layout", { body: `
+  <a href="/agregar" class="boton">Agregar nueva tarea</a>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Acciones</th>
+    </tr>
+
+    ${tareas
+      .map(
+        (t) => `
+      <tr>
+        <td>${t.id}</td>
+        <td>${t.titulo}</td>
+        <td>${t.descripcion}</td>
+        <td>
+          <a class="boton" href="/editar/${t.id}">Editar</a>
+          <a class="boton eliminar" href="/eliminar/${t.id}">Eliminar</a>
+        </td>
+      </tr>`
+      )
+      .join("")}
+  </table>
+` }) %>
